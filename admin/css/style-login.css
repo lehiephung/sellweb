@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+#wrapper-login{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 80vh;
+}
+form{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 30px; 
+}
+h3{
+    text-align: center;
+    font-size: 24px;
+    font-weight:bold;
+}
+.form-group{
+    margin-bottom: 11px;
+    position: relative;
+}
+input{
+    height: 50px;
+    width: 300px;
+    outline: none;
+    border: 1px solid rgb(88, 89, 92); 
+    padding: 10px;
+    border-radius: 5px;
+    font-size: inherit;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+label{
+    position: absolute;
+    padding: 0px 5px;
+    left: 5px;
+    top: 50%;
+    pointer-events: none;
+    transform: translateY(-50%);
+    background:  #fff;
+    transition: all 0.3s ease-in-out;
+}
+.form-group input:focus{
+    border: 2px solid dodgerblue;
+}
+.form-group input:focus + label, .form-group input:valid + label{    
+    top: 0px;
+    font-size: 13px;
+    font-weight: 500;
+    color: dodgerblue;
+}
+input#btn-login{
+    background: dodgerblue;
+    color: #fff;
+    cursor: pointer;
+}
+input#btn-login:hover{
+    opacity: 0.85;
+}
+input#btn-SignIn{
+   
+    background-color: rgb(0, 0, 0);
+    color: #ff0909;
+    cursor: pointer;
+
+}
+input#btn-SignIn:hover{
+    opacity: 0.85;
+}
+
+
+
+/* */
+
